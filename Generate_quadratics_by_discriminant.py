@@ -37,9 +37,10 @@ for i in range(-coefficient_bound,coefficient_bound+1,1):
                 list_of_coefficients.append(coefficients)
                 how_many_quadratics += 1
 
+print(f"There are {how_many_quadratics} different quadratics with discriminant = {target_discriminant}")
+print(f"and coefficients between -{coefficient_bound} and +{coefficient_bound}")
+
 for n in range(0,len(list_of_coefficients)):
     if(n==0):
         print(f"{list_of_coefficients[0]} = {list_of_coefficients[0][0]}x\u00b2 + {list_of_coefficients[0][1]}x + {list_of_coefficients[0][2]} = y")
     print(list_of_coefficients[n])
-print(f"There are {how_many_quadratics} different quadratics with discriminant = {target_discriminant}")
-print(f"and coefficients between -{coefficient_bound} and +{coefficient_bound}")
